@@ -26,25 +26,28 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                      level=logging.INFO)
 
 # Importing our JSON file from our local path
-folder_path = "..\\MotivationalQuotesBot\\"
+folder_path = "../MotivationalQuotesBot/"
 quotes_file = "quotes.json"
 json_file = folder_path + quotes_file
-quotes_database = json.loads(open(json_file).read())
 
 # Converting it to a Pandas DataFrame
-df = pd.DataFrame(quotes_database)
+df = pd.read_json(json_file)
 
+# Converting into a list
 quote_text = list(x for x in df["quoteText"])
 
+# Creating a reply keyboard
 reply_keyboard = [['/quote']]
 markup = ReplyKeyboardMarkup(reply_keyboard, resize_keyboard = True)
 
+# Displaying the starting message when bot starts
 def start(bot, update):
     bot.send_message(chat_id = update.message.chat_id, text = "Hi there! Everybody needs motivation now and then, and we aim to provide it to you! Type /quote to get a new quote everytime!", reply_markup = markup)
     
 start_handler = CommandHandler('start', start)
 dispatcher.add_handler(start_handler)
 
+# Quote Message function to display the quotes
 def quote_message(bot, update):
     random_quote = random.choice(quote_text)
     bot.send_message(chat_id = update.message.chat_id, text = random_quote)
@@ -52,12 +55,14 @@ def quote_message(bot, update):
 quote_message_handler = CommandHandler('quote', quote_message)
 dispatcher.add_handler(quote_message_handler)
 
+# Error handling
 def unknown(bot, update):
     bot.send_message(chat_id = update.message.chat_id, text="Sorry, I didn't understand that command! Please try again!")
 
 unknown_handler = MessageHandler(Filters.command, unknown)
 dispatcher.add_handler(unknown_handler)
 
+# Updater function to start polling
 updater.start_polling()
 updater.idle()
     
