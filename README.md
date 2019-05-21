@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Python-3.7-blue.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![CodeFactor](https://www.codefactor.io/repository/github/sumitagr/motivationalquotes-bot/badge/master)](https://www.codefactor.io/repository/github/sumitagr/motivationalquotes-bot/overview/master)
 
-<img style = "float: middle;" src = "https://i.imgur.com/9CGY8jl.png">
+<img style = "float: middle;" src = "https://i.imgur.com/sWksnI0.png">
 
 Motivational Quotes Bot is a Telegram Bot that generates a new motivational quote with a single click or a single command.
 
