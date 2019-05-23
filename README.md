@@ -8,6 +8,10 @@ Motivational Quotes Bot is a Telegram Bot that generates a new motivational quot
 
 #### Link to the bot - <a href="http://t.me/MotivationalQuotes_Bot" target="_blank">t.me/MotivationalQuotes_Bot </a>
 
+## Demo
+
+<img src = "https://i.imgur.com/A0DGCS8.gif">
+
 ## Python Libraries
 
 * [Python-Telegram-Bot](https://python-telegram-bot.org/) - Python wrapper for the Telegram API
