@@ -1,7 +1,8 @@
 # Python-telegram-bot libraries
 import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-from telegram import ReplyKeyboardMarkup
+from telegram import ReplyKeyboardMarkup, ChatAction
+from functools import wraps
 
 # Logging and requests libraries
 import logging
