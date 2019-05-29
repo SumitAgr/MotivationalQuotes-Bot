@@ -28,13 +28,8 @@ bot = telegram.Bot(token = token)
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
 
-# Importing our JSON file from our local path
-folder_path = "../MotivationalQuotesBot/"
-quotes_file = "quotes.json"
-json_file = folder_path + quotes_file
-
-# Converting it to a Pandas DataFrame
-df = pd.read_json(json_file)
+# Converting our JSON file into a Pandas DataFrame
+df = pd.read_json('quotes.json')
 
 # Converting into a list
 quote_text = list(x for x in df["quoteText"])
