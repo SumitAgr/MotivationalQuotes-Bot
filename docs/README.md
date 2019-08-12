@@ -7,7 +7,7 @@
 
 <p align="center"> 🤖 Motivational Quotes Bot is a Telegram Bot that generates a new motivational quote with a single click or a single command.
     <br> 
-  <b>Use it live here: [https://t.me/MotivationalQuotes_Bot](https://t.me/MotivationalQuotes_Bot)</b>
+  <b>Use it live here: https://t.me/MotivationalQuotes_Bot</b>
 </p>
 
 <h4> Demo </h4>
