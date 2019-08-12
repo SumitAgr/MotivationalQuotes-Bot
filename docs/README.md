@@ -10,11 +10,11 @@
   <b>Use it live here: https://t.me/MotivationalQuotes_Bot</b>
 </p>
 
-<h4> Demo </h4>
+## Demo
 
 <img src = "https://i.imgur.com/A0DGCS8.gif">
 
-<h4> Built with </h4>
+## Built with
 
 * [Python-Telegram-Bot](https://python-telegram-bot.org/) - Python wrapper for the Telegram API
 * Logging - Library for debugging the bot
@@ -22,10 +22,10 @@
 * JSON - Library to read the JSON file
 * Random - To randomize quotes from the DataFrame
 
-<h4> License </h4>
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for more details.
 
-<h4> Author </h4>
+## Author
 
 Sumit Agrawal
