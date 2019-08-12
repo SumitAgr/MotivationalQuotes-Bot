@@ -1,9 +1,9 @@
-<h3 align="center">Motivational Quotes Bot for Telegram</h3>
-
 <p align="center">
   <a href="" rel="noopener">
  <img src="https://i.imgur.com/2BSc2O0.png" alt="Bot logo" height = "100" weight = "100"></a>
 </p>
+
+<h3 align="center">Motivational Quotes Bot for Telegram</h3>
 
 <p align="center"> 🤖 Motivational Quotes Bot is a Telegram Bot that generates a new motivational quote with a single click or a single command.
     <br> 
